@@ -22,10 +22,12 @@ body {
 .title {
   font-size: 42px;
   margin: 20px 0;
+  text-align: center;
 }
 
 .text {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .exchange-container {
