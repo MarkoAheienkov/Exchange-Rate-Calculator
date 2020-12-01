@@ -42,7 +42,6 @@ body {
 	font-family: sans-serif;
 	font-weight: 700;
 	color: rgba(0, 0, 0, 0.8);
-	width: 100%;
   border: none;
   cursor: pointer;
   padding: .6em 1.4em .5em .8em;
@@ -72,7 +71,8 @@ body {
 }
 
 .exchange-select option {
-	font-weight:normal;
+  font-weight:normal;
+  cursor: pointer;
 }
 
 .exchange-input {
@@ -86,9 +86,27 @@ body {
   font-family: sans-serif;
 }
 
+.exchange-input::placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+
 .exchange-input:focus {
   outline: none;
   border-bottom-color: rgb(73, 151, 73);
+}
+
+.exchange-input.error {
+  border-bottom-color: rgb(209, 29, 9);
+  color: rgb(209, 29, 9);
+}
+
+.exchange-input:disabled {
+  background: transparent;
+  color: black;
+}
+
+.exchange-input:disabled::placeholder {
+
 }
 
 .exchange-swap {

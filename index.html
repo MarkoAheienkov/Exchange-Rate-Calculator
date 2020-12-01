@@ -14,23 +14,21 @@
   </div>
   <h1 class="title">Exchange Rate Calculator</h1>
   <p class="text">Choose the currency and the amounts to get exchange rate</p>
-  <div>
-    <div class="exchange-container">
+  <div class="container">
+    <div class="exchange-container" data-for="input">
       <select class="exchange-select">
-        <option value="usd">USD</option>
-        <option value="eu">EU</option>
+        <option value="Loading">Loading...</option>
       </select>
       <input type="text" class="exchange-input" placeholder="0.00">
     </div>
     <div class="exchange-swap">
       <button id="swap" class="btn"><i class="fas fa-sync-alt fa-2x"></i></button>
     </div>
-    <div class="exchange-container">
+    <div class="exchange-container" data-for="output">
       <select class="exchange-select">
-        <option value="usd">USD</option>
-        <option value="eu">EU</option>
+        <option value="Loading">Loading...</option>
       </select>
-      <input type="text" class="exchange-input" placeholder="0.00">
+      <input disabled type="text" class="exchange-input" placeholder="0.00">
     </div>
   </div>
   <script src="script/script.js"></script>
